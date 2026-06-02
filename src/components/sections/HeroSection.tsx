@@ -12,16 +12,19 @@ export function HeroSection() {
   return (
     <section id="home" className="container scroll-mt-24 py-20 sm:py-28">
       <div className="max-w-4xl">
-        <Badge variant="outline" className="mb-6 border-primary/40 text-primary">
+        <Badge
+          variant="outline"
+          className="mb-6 border-primary/40 text-primary"
+        >
           Full Stack Software Engineer / Cloud Engineer / DevOps Engineer
         </Badge>
         <h1 className="max-w-3xl text-4xl font-extrabold tracking-normal text-foreground sm:text-5xl lg:text-6xl">
-          Building reliable web platforms from interface to infrastructure.
+          Backend-focused software engineer building scalable applications and
+          cloud infrastructure.
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
-          Placeholder intro for a portfolio focused on modern full stack
-          engineering, AWS cloud architecture, DevOps practices, and production
-          delivery.
+          I build reliable digital products with a backend-first mindset,
+          combining application development with practical cloud infrastructure.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <Button asChild size="lg">

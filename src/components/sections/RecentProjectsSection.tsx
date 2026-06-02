@@ -12,22 +12,25 @@ import {
 
 const projects = [
   {
-    name: "Cloud-Native Web Platform",
-    tags: ["React", "NestJS", "AWS"],
+    name: "EMPOWERX HRIS",
+    tags: ["VueJS", "Laravel", "MySQL"],
     summary:
-      "Placeholder for a deployed full stack system with authentication, APIs, and cloud hosting.",
+      "A full stack Human Resource Information System designed to manage core HR workflows through a structured backend and production-ready deployment setup. ",
+    link: "https://empowerex.dswd5.com/",
   },
   {
-    name: "CI/CD Delivery Pipeline",
-    tags: ["GitHub Actions", "Docker", "IaC"],
+    name: "EMPOWERX Jobs",
+    tags: ["API Gateway", "AWS Lambda", "AWS DynamoDB"],
     summary:
-      "Placeholder for automated builds, tests, containerization, and environment promotion.",
+      "Serverless job board that reduces application processing time from 11 days to 2 days. Features job posting, mass application submissions, and a back-office interface for candidate evaluation.",
+    link: "https://jobs.dswd5.com/",
   },
   {
     name: "Infrastructure Automation",
-    tags: ["AWS", "Terraform", "Monitoring"],
+    tags: ["Jenkins", "YAML", "Cloudformation"],
     summary:
       "Placeholder for repeatable infrastructure, alerts, and reliability improvements.",
+    link: "",
   },
 ];
 
@@ -59,8 +62,13 @@ export function RecentProjectsSection() {
             </CardContent>
             <CardFooter>
               <Button asChild variant="ghost" size="sm">
-                <a href="#social-links">
-                  Project Link
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Open project link for ${project.name}`}
+                >
+                  Project Link:
                   <ExternalLink className="h-4 w-4" />
                 </a>
               </Button>
