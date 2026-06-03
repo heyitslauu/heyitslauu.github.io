@@ -16,7 +16,8 @@ export function HeroSection() {
           variant="outline"
           className="mb-6 border-primary/40 text-primary"
         >
-          Full Stack Software Engineer / Cloud Engineer / DevOps Engineer
+          Software Engineer / Cloud Engineer / DevOps Engineer / AI & Automation
+          Specialist
         </Badge>
         <h1 className="max-w-3xl text-4xl font-extrabold tracking-normal text-foreground sm:text-5xl lg:text-6xl">
           Backend-focused software engineer building scalable applications and

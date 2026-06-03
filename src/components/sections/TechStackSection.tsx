@@ -7,27 +7,36 @@ const stackGroups = [
   {
     title: "Frontend",
     icon: Code2,
-    items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "shadcn/ui"],
+    items: [
+      "React",
+      "VueJS",
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "shadcn/ui",
+    ],
   },
   {
     title: "Backend",
     icon: Database,
-    items: ["Node.js", "NestJS", "REST APIs", "PostgreSQL", "Prisma"],
+    items: [
+      "Node.js",
+      "NestJS",
+      "REST APIs",
+      "PostgreSQL",
+      "Prisma",
+      "Laravel",
+    ],
   },
   {
     title: "Cloud",
     icon: Settings,
-    items: ["AWS", "IAM", "S3", "ECS", "CloudWatch"],
+    items: ["AWS", "IAM", "S3", "ECS", "CloudWatch", "DynamoDB"],
   },
   {
     title: "DevOps",
     icon: GitBranch,
-    items: ["CI/CD", "GitHub Actions", "Docker", "IaC", "Linux"],
-  },
-  {
-    title: "Containers",
-    icon: Container,
-    items: ["Docker Compose", "Images", "Registries", "Runtime Config"],
+    items: ["CI/CD", "GitHub Actions", "Docker", "IaC", "Linux", "Jenkins"],
   },
 ];
 
@@ -37,9 +46,9 @@ export function TechStackSection() {
       id="tech-stack"
       eyebrow="Tech Stack"
       title="Tools For Shipping Maintainable Systems"
-      description="Swap these placeholder technologies for your strongest production tools."
+      description="Frontend, backend, cloud, and DevOps tools used to build, deploy, and maintain production systems."
     >
-      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {stackGroups.map(({ title, icon: Icon, items }) => (
           <Card key={title}>
             <CardHeader>

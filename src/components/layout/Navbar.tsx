@@ -1,4 +1,4 @@
-import { Cloud, Code2, Mail, UserRound } from "lucide-react";
+import { Code2, Mail, UserRound } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -15,9 +15,14 @@ export function Navbar() {
       <nav className="container flex min-h-16 items-center justify-between gap-4">
         <a href="#home" className="flex items-center gap-2 font-semibold">
           <span className="flex h-9 w-9 items-center justify-center rounded-md border border-primary/30 bg-primary/10 text-primary">
-            <Cloud className="h-5 w-5" aria-hidden="true" />
+            <img
+              src="/favicon_io/favicon-32x32.png"
+              alt=""
+              className="h-5 w-5"
+              aria-hidden="true"
+            />
           </span>
-          <span className="hidden sm:inline">Portfolio</span>
+          <span className="hidden sm:inline">Laurence Cadag</span>
         </a>
         <div className="hidden items-center gap-1 md:flex">
           {navItems.map((item) => (

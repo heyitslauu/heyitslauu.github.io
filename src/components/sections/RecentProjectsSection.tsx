@@ -13,24 +13,27 @@ import {
 const projects = [
   {
     name: "EMPOWERX HRIS",
-    tags: ["VueJS", "Laravel", "MySQL"],
+    tags: ["Vue.js", "Laravel", "MySQL"],
     summary:
-      "A full stack Human Resource Information System designed to manage core HR workflows through a structured backend and production-ready deployment setup. ",
+      "Full stack Human Resource Information System built to support core HR workflows through a structured backend, role-based operations, and production-ready deployment.",
     link: "https://empowerex.dswd5.com/",
+    linkLabel: "Live System",
   },
   {
     name: "EMPOWERX Jobs",
-    tags: ["API Gateway", "AWS Lambda", "AWS DynamoDB"],
+    tags: ["API Gateway", "AWS Lambda", "DynamoDB"],
     summary:
-      "Serverless job board that reduces application processing time from 11 days to 2 days. Features job posting, mass application submissions, and a back-office interface for candidate evaluation.",
+      "AWS-native serverless job board that reduced application processing time from 11 days to 2 days through automated submission flows, scalable APIs, and a back-office review interface.",
     link: "https://jobs.dswd5.com/",
+    linkLabel: "Live System",
   },
   {
     name: "Infrastructure Automation",
-    tags: ["Jenkins", "YAML", "Cloudformation"],
+    tags: ["Jenkins", "YAML", "CloudFormation"],
     summary:
-      "Placeholder for repeatable infrastructure, alerts, and reliability improvements.",
-    link: "",
+      "Infrastructure automation case study covering repeatable AWS provisioning, CI/CD orchestration, deployment reliability, and operational alerting for multi-service systems.",
+    link: "/case-study/infrastructure-automation",
+    linkLabel: "View Case Study",
   },
 ];
 
@@ -39,8 +42,8 @@ export function RecentProjectsSection() {
     <Section
       id="projects"
       eyebrow="Recent Projects"
-      title="Selected Work Ready For Real Case Studies"
-      description="Use these cards as a scaffold for project outcomes, technical decisions, and links."
+      title="Production Systems And Infrastructure Work"
+      description="Recent work spanning HR platforms, serverless job workflows, and AWS infrastructure automation."
     >
       <div className="grid gap-4 lg:grid-cols-3">
         {projects.map((project) => (
@@ -66,9 +69,9 @@ export function RecentProjectsSection() {
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"
-                  aria-label={`Open project link for ${project.name}`}
+                  aria-label={`${project.linkLabel} for ${project.name}`}
                 >
-                  Project Link:
+                  {project.linkLabel}
                   <ExternalLink className="h-4 w-4" />
                 </a>
               </Button>

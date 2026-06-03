@@ -9,19 +9,22 @@ import {
 
 const experiences = [
   {
-    title: "Full Stack Engineering",
+    title: "DevOps Engineer",
+    timeline: "June 2025 – Present",
     description:
-      "Placeholder role summary for building production web apps with React, TypeScript, APIs, and scalable backend services.",
+      "Build and maintain AWS infrastructure for multi-service deployments. Design CI/CD pipelines with Jenkins, manage ECS clusters, and implement CloudFormation stacks for scalable cloud architecture.",
   },
   {
-    title: "Cloud Engineering",
+    title: "Full Stack Engineer",
+    timeline: "April 2022 – June 2025",
     description:
-      "Placeholder role summary for AWS services, cloud architecture, observability, and secure deployment foundations.",
+      "Develop production-ready backend APIs and full stack applications using Laravel and VueJS. Built EMPOWERX HRIS and Jobs platforms serving real-world users with focus on reliability and maintainability.",
   },
   {
-    title: "DevOps Engineering",
+    title: "Technical Instructor (Computer Science)",
+    timeline: "April 2022 – May 2023",
     description:
-      "Placeholder role summary for CI/CD pipelines, Docker workflows, infrastructure as code, and release automation.",
+      "Taught programming, web development, and database courses to undergraduate students. Mentored capstone projects while simultaneously building production software systems.",
   },
 ];
 
@@ -31,14 +34,16 @@ export function ExperienceSection() {
       id="experience"
       eyebrow="Experience"
       title="Engineering Across Product, Platform, And Delivery"
-      description="Replace these placeholders with role-specific highlights, measurable outcomes, and responsibilities."
+      description="Hands-on experience building AWS infrastructure, production web platforms, and technical learning programs."
     >
       <div className="grid gap-4 md:grid-cols-3">
         {experiences.map((item) => (
           <Card key={item.title}>
             <CardHeader>
               <CardTitle>{item.title}</CardTitle>
-              <CardDescription>Placeholder timeline or company</CardDescription>
+              <CardDescription className="opacity-80">
+                {item.timeline}
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm leading-6 text-muted-foreground">
