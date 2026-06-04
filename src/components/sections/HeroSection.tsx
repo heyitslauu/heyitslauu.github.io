@@ -1,6 +1,7 @@
 import { ArrowRight, Server, ShieldCheck, Workflow } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { EmailCopyButton } from "@/components/EmailCopyButton";
 
 const strengths = [
   { icon: Server, label: "Full Stack Systems" },
@@ -34,9 +35,12 @@ export function HeroSection() {
               <ArrowRight className="h-4 w-4" />
             </a>
           </Button>
-          <Button asChild variant="outline" size="lg">
-            <a href="#contact">Get In Touch</a>
-          </Button>
+          <EmailCopyButton
+            label="Get In Touch"
+            variant="outline"
+            size="lg"
+            showIcon={false}
+          />
         </div>
         <div className="mt-12 grid gap-3 sm:grid-cols-3">
           {strengths.map(({ icon: Icon, label }) => (

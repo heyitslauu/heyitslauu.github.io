@@ -1,5 +1,6 @@
-import { Code2, Mail, UserRound } from "lucide-react";
+import { Code2, FileText, Mail, UserRound } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { EmailCopyButton } from "@/components/EmailCopyButton";
 
 const navItems = [
   { label: "Experience", href: "#experience" },
@@ -47,6 +48,15 @@ export function Navbar() {
               <Mail className="h-4 w-4" />
             </a>
           </Button>
+          <EmailCopyButton
+            label=""
+            showIcon={false}
+            variant="ghost"
+            size="icon"
+            aria-label="Resume"
+          >
+            <FileText className="h-4 w-4" />
+          </EmailCopyButton>
         </div>
       </nav>
     </header>
