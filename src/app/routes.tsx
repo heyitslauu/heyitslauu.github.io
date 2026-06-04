@@ -1,4 +1,5 @@
 import type { RouteObject } from "react-router-dom";
+import { InfrastructureAutomationCaseStudy } from "@/app/InfrastructureAutomationCaseStudy";
 import { Navbar } from "@/components/layout/Navbar";
 import { CertificationsSection } from "@/components/sections/CertificationsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
@@ -29,5 +30,9 @@ export const routes: RouteObject[] = [
   {
     path: "/",
     element: <PortfolioPage />,
+  },
+  {
+    path: "/case-study/infrastructure-automation",
+    element: <InfrastructureAutomationCaseStudy />,
   },
 ];
