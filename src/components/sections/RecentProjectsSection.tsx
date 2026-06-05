@@ -32,7 +32,7 @@ const projects = [
     tags: ["Jenkins", "YAML", "CloudFormation"],
     summary:
       "Infrastructure automation case study covering repeatable AWS provisioning, CI/CD orchestration, deployment reliability, and operational alerting for multi-service systems.",
-    link: "/case-study/infrastructure-automation",
+    link: "/#/case-study/infrastructure-automation",
     linkLabel: "View Case Study",
   },
 ];
